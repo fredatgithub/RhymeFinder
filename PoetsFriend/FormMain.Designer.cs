@@ -34,6 +34,9 @@
       this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
       this.mnuHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
       this.txtPoem = new RhymeLib.RhymeAssistTextbox();
+      this.toolStripMenuItemLanguage = new System.Windows.Forms.ToolStripMenuItem();
+      this.englishToolStripMenuItemEnglish = new System.Windows.Forms.ToolStripMenuItem();
+      this.frenchToolStripMenuItemFrench = new System.Windows.Forms.ToolStripMenuItem();
       this.menuStrip1.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -43,6 +46,7 @@
       this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFile,
             this.mnuFormat,
+            this.toolStripMenuItemLanguage,
             this.mnuHelp});
       this.menuStrip1.Location = new System.Drawing.Point(0, 0);
       this.menuStrip1.Name = "menuStrip1";
@@ -116,7 +120,7 @@
       // mnuHelpAbout
       // 
       this.mnuHelpAbout.Name = "mnuHelpAbout";
-      this.mnuHelpAbout.Size = new System.Drawing.Size(125, 26);
+      this.mnuHelpAbout.Size = new System.Drawing.Size(181, 26);
       this.mnuHelpAbout.Text = "About";
       this.mnuHelpAbout.Click += new System.EventHandler(this.mnuHelpAbout_Click);
       // 
@@ -134,6 +138,29 @@
       this.txtPoem.TabIndex = 5;
       this.txtPoem.TextChanged += new System.EventHandler(this.txtPoem_TextChanged);
       // 
+      // toolStripMenuItemLanguage
+      // 
+      this.toolStripMenuItemLanguage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItemEnglish,
+            this.frenchToolStripMenuItemFrench});
+      this.toolStripMenuItemLanguage.Name = "toolStripMenuItemLanguage";
+      this.toolStripMenuItemLanguage.Size = new System.Drawing.Size(86, 24);
+      this.toolStripMenuItemLanguage.Text = "Language";
+      // 
+      // englishToolStripMenuItemEnglish
+      // 
+      this.englishToolStripMenuItemEnglish.Checked = true;
+      this.englishToolStripMenuItemEnglish.CheckState = System.Windows.Forms.CheckState.Checked;
+      this.englishToolStripMenuItemEnglish.Name = "englishToolStripMenuItemEnglish";
+      this.englishToolStripMenuItemEnglish.Size = new System.Drawing.Size(181, 26);
+      this.englishToolStripMenuItemEnglish.Text = "English";
+      // 
+      // frenchToolStripMenuItemFrench
+      // 
+      this.frenchToolStripMenuItemFrench.Name = "frenchToolStripMenuItemFrench";
+      this.frenchToolStripMenuItemFrench.Size = new System.Drawing.Size(181, 26);
+      this.frenchToolStripMenuItemFrench.Text = "French";
+      // 
       // FormMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -142,7 +169,7 @@
       this.Controls.Add(this.txtPoem);
       this.Controls.Add(this.menuStrip1);
       this.MainMenuStrip = this.menuStrip1;
-      this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.Margin = new System.Windows.Forms.Padding(4);
       this.Name = "FormMain";
       this.ShowIcon = false;
       this.Text = "Poet\'s Friend";
@@ -166,7 +193,9 @@
         private System.Windows.Forms.ToolStripMenuItem mnuHelpAbout;
         private System.Windows.Forms.ToolStripMenuItem mnuFormat;
         private System.Windows.Forms.ToolStripMenuItem mnuFormatFont;
-
-    }
+    private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemLanguage;
+    private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItemEnglish;
+    private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItemFrench;
+  }
 }
 
